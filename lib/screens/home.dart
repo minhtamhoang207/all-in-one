@@ -10,8 +10,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
-  int selectedIndex = 0;
-  List<Widget> listWidgets = [Search(),Search(),Search(),CovidTracker(),Search()];
+  int selectedIndex = 2;
+  List<Widget> listWidgets = [Search(),Search(),CovidTracker(),Search(),Search()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,12 +20,14 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
           items: [
             TabItem(icon: Icons.home, title: 'Home'),
             TabItem(icon: Icons.map, title: 'Discovery'),
-            TabItem(icon: Icons.search, title: 'Search'),
-            TabItem(icon: Icons.track_changes, title: 'Covid'),
+            TabItem(icon: Icons.search, title: 'Covid'),
+            TabItem(icon: Icons.track_changes, title: 'Words'),
             TabItem(icon: Icons.people, title: 'Profile'),
           ],
           initialActiveIndex: 2,
-          backgroundColor: Colors.blue.withOpacity(0.8),
+          backgroundColor: Colors.white,
+          color: Colors.grey,
+          activeColor: Colors.black.withOpacity(0.75),
           onTap: (index) => onItemTapped(index),
         )
     );

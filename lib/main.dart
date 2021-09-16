@@ -11,11 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: "/",
-      routes: {
-        "/": (_) => HomePage(),
-        "/search": (BuildContext context) => Search(),
-      },
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
