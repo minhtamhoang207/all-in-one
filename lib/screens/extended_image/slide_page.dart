@@ -13,7 +13,7 @@ class _SlidePageDemoState extends State<SlidePageDemo> {
     'https://photo.tuchong.com/17325605/f/641585173.jpg',
     'https://photo.tuchong.com/3541468/f/256561232.jpg',
     'https://photo.tuchong.com/16709139/f/278778447.jpg',
-    'This is an video',
+    'https://photo.tuchong.com/16709139/f/278778447.jpg',
     'https://photo.tuchong.com/5040418/f/43305517.jpg',
     'https://photo.tuchong.com/3019649/f/302699092.jpg'
   ];
