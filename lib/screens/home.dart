@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:search_cubit/screens/covid_tracker.dart';
 import 'package:search_cubit/screens/search_screen.dart';
 
+import 'extended_image/slide_page.dart';
+
 class HomePage extends StatefulWidget {
 
   @override
@@ -11,7 +13,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin{
   int selectedIndex = 2;
-  List<Widget> listWidgets = [Search(),Search(),CovidTracker(),Search(),Search()];
+  List<Widget> listWidgets = [Search(),Search(),CovidTracker(),Search(),SlidePageDemo()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
